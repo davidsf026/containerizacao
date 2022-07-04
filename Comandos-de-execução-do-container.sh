@@ -21,8 +21,10 @@
 # NÃO SE ESQUEÇA DE DAR CHMOD 777 PARA O ARQUIVO DO SCRIPT E DE COLOCAR O CONTAINER FILE E
 # SOURCE (SE NECESSÁRIO) NO MESMO DIRETÓRIO DO SHELL SCRIPT.
 
+# PARA MAIS INFORMAÇÕES LEIA O ARQUIVO README.MD NA RAIZ DESSE REPOSITÓRIO. 
+
 clear
-echo "Você quer fazer o build/run deste contêiner no Docker ou no Podman?"
+echo "Você quer fazer o build/run deste container no Docker ou no Podman?"
 echo "1 — Docker"
 echo "2 — Podman"
 

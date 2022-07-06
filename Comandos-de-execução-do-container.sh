@@ -34,7 +34,7 @@
 # PARA MAIS INFORMAÇÕES LEIA O ARQUIVO README.MD NA RAIZ DESSE REPOSITÓRIO. 
 
 clear
-echo "Você quer fazer o build/run deste container no Docker ou no Podman?"
+echo "Você quer fazer o build/run deste container no Docker, Podman ou OpenShift?"
 echo "1 — Docker"
 echo "2 — Podman"
 echo "3 — OpenShift"

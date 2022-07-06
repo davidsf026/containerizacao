@@ -92,6 +92,6 @@ then
         echo 
 else
         echo 
-        echo -e "\033[41;1;37mErro! Rode o script novamente e informe um valor que seja igual a 1 ou 2.\033[0m"
+        echo -e "\033[41;1;37mErro! Rode o script novamente e informe um valor que seja igual a 1, 2 ou 3.\033[0m"
         echo 
 fi

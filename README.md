@@ -1,82 +1,74 @@
-helloworld: Helloworld Example
-===============================
-Author: Pete Muir  
-Level: Beginner  
-Technologies: CDI, Servlet  
-Summary: Basic example that can be used to verify that the server is configured and running correctly  
-Target Product: EAP  
-Product Versions: EAP 6.1, EAP 6.2  
-Source: <https://github.com/jboss-developer/jboss-eap-quickstarts/>  
 
-What is it?
------------
+## TO DO - README
+- [ ]  Inserir o link do tutorial da configuração do maven
+- [ ]  insreir o link do tutorial de build e deploy da guias
+- [ ]  Inserir o link do tutorial Usando o JBoss Developer Studio ou Eclipse para executar os guias
+# Containerização - Aplicação
 
-This example demonstrates the use of *CDI 1.0* and *Servlet 3* in Red Hat JBoss Enterprise Application Platform.
+## O que é?
+Este exemplo demonstra o uso da CDI 1.0 e Servlet 3 no Red Hat JBoss Enterprise Application Platform.
 
-There is a tutorial for this quickstart in the [Getting Started Developing Applications Guide](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/guide/HelloworldQuickstart).
+Saiba mais sobre [nesse tutorial.](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/guide/HelloworldQuickstart)
 
-System requirements
--------------------
+## Autores
 
-The application this project produces is designed to be run on Red Hat JBoss Enterprise Application Platform 6.1 or later. 
+- [@davidsf026](https://www.github.com/davidsf026)
 
-All you need to build this project is Java 6.0 (Java SDK 1.6) or later, Maven 3.0 or later.
- 
-Configure Maven
----------------
+- [@pedrosousa-dev](https://github.com/pedrosousa-dev)
 
-If you have not yet done so, you must [Configure Maven](../README.md#configure-maven) before testing the quickstarts.
+- [Glocker1v4](https://github.com/Glocker1v4)
+
+- [jaokk](https://github.com/jaokk)
 
 
-Start the JBoss Server
--------------------------
+## Requisitos de sistema
+A aplicação gerada por esse projeto foi desenvolvida para rodar no Red Hat JBoss Enterprise Application Platform versão 6.1 ou superior.
 
-1. Open a command line and navigate to the root of the JBoss server directory.
-2. The following shows the command line to start the server:
-
-        For Linux:   JBOSS_HOME/bin/standalone.sh
-        For Windows: JBOSS_HOME\bin\standalone.bat
-
- 
-Build and Deploy the Quickstart
--------------------------
-
-_NOTE: The following build command assumes you have configured your Maven user settings. If you have not, you must include Maven setting arguments on the command line. See [Build and Deploy the Quickstarts](../README.md#build-and-deploy-the-quickstarts) for complete instructions and additional options._
-
-1. Make sure you have started the JBoss Server as described above.
-2. Open a command line and navigate to the root directory of this quickstart.
-3. Type this command to build and deploy the archive:
-
-        mvn clean install jboss-as:deploy
-
-4. This will deploy `target/jboss-helloworld.war` to the running instance of the server.
+Para a build do projeto, é necessário apenas o Java 6.0 (Java SKD 1.6) ou superior, Maven 3.0 ou superior.
+## Configuração do Maven
+Caso ainda não tenha sido configurado, antes de testar o guia é necessário [configurar o Maven.]()  
+**(INSERIR UM LINK PARA UM TUTORIAL DE CONFIGURAÇÃO DO MAVEN)**
+## Iniciando o servidor JBoss
+1. Abra um terminal e navegue até o diretório raiz do servidor JBoss.
+2. Execute o arquivo à seguir, de acordo com seu sistema operacional:
+```console
+No linux: JBOSS_HOME/bin/standalone.sh
+No Windows: JBOSS_HOME\bin\standalone.bat
+```
 
 
-Access the application 
----------------------
+## Build e Deploy do guia
+*NOTA: A configuração prévia do seu usuário Maven é imprescindível para os comandos de build à seguir.
+Caso ainda não o tenha feito, será necessário incluir suas configurações do Maven na linha de comando.
+Veja [Build e deploy de guias]() para as instruções completas e opções adicionais.*
 
-The application will be running at the following URL: <http://localhost:8080/jboss-helloworld>. 
+**INSERIR O LINK DO TUTORIAL DE BUILD E DEPLOYS DE GUIAS**
 
+1. Verifique que o servidor JBoss já tenha iniciado, como descrito anteriormente.
+2. Abra o terminal e navegue até o diretório raiz desse guia.
+3. Digite o seguinte comando para iniciar o Build e Deploy do arquivo:
+```console
+mvn clean install jboss-as:deploy
+```
+4. O deploy de `target/jboss-helloworld.war` será iniciado à instância do servidor em execução.
+## Acesso à aplicação
+A aplicação estará executando na URL http://localhost:8080/jboss-helloworld .
+## Undeploy do arquivo
+1. Verifique se o servidor JBoss ainda esteja em execução.
+2. Abra o terminal e navegue até o diretório raiz desse guia.
+3. Quando finalizar os testes, digite o comando à seguir para o Undeploy do arquivo:
+```console
+mvn jboss-as:Undeploy
+```
+## Executando o guia no JBoss Developer Studio ou Eclipse
+Também é possível iniciar o servidor e fazer o deploy dos guias pelo Eclipse usando a JBoss tools.
+Para mais informações, veja [Usando o JBoss Developer Studio ou Eclipse para executar os guias]()
 
-Undeploy the Archive
---------------------
-
-1. Make sure you have started the JBoss Server as described above.
-2. Open a command line and navigate to the root directory of this quickstart.
-3. When you are finished testing, type this command to undeploy the archive:
-
-        mvn jboss-as:undeploy
-
-
-Run the Quickstart in JBoss Developer Studio or Eclipse
--------------------------------------
-You can also start the server and deploy the quickstarts from Eclipse using JBoss tools. For more information, see [Use JBoss Developer Studio or Eclipse to Run the Quickstarts](../README.md#use-jboss-developer-studio-or-eclipse-to-run-the-quickstarts) 
-
-
-Debug the Application
-------------------------------------
-
-If you want to debug the source code or look at the Javadocs of any library in the project, run either of the following commands to pull them into your local repository. The IDE should then detect them.
-
-        mvn dependency:sources
-        mvn dependency:resolve -Dclassifier=javadoc
+**INSERIR O LINK DO TUTORIAL DE USANDO O JBOSS DEVELOPER STUDIO OU ECLIPSE PARA EXECUTAR OS GUIAS**
+## Debug da aplicação
+Caso seja necessário o debug do código fonte ou ler a o Javadocs de qualquer biblioteca no projeto,
+execute um dos seguintes comandos para subi-los para seu repositório local. A IDE deve então os detectar.
+```console
+mvn dependency:sources
+mvn dependency:sources -Dclassifier=javadoc
+```

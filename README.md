@@ -12,9 +12,9 @@ Saiba mais sobre [nesse tutorial.](http://www.jboss.org/jdf/quickstarts/jboss-as
 
 ## Autores
 
-- [@davidsf026](https://www.github.com/davidsf026)
+- [davidsf026](https://www.github.com/davidsf026)
 
-- [@pedrosousa-dev](https://github.com/pedrosousa-dev)
+- [pedrosousa-dev](https://github.com/pedrosousa-dev)
 
 - [Glocker1v4](https://github.com/Glocker1v4)
 

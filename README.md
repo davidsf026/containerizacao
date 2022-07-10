@@ -1,7 +1,7 @@
 
 ## TO DO - README
 - [ ]  Inserir o link do tutorial da configuração do maven
-- [ ]  insreir o link do tutorial de build e deploy da guias
+- [ ]  Inserir o link do tutorial de build e deploy da guias
 - [ ]  Inserir o link do tutorial Usando o JBoss Developer Studio ou Eclipse para executar os guias
 # Containerização - Aplicação
 
